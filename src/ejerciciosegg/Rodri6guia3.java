@@ -26,13 +26,9 @@ public class Rodri6guia3 {
      */
     public static void main(String[] args) {
         
-        int numero1, numero2;
-        numero1 = 0;
-        numero2 = 0;
-      
-        Scanner read;
-        read = new Scanner(System.in);
-         System.out.println("/////////////////////////////////////////////////");
+        int numero1, numero2; 
+        
+        System.out.println("//////////////////////////////////////////////////");
         System.out.println("//      Bienvenidos a la calculadora            //");
         System.out.println("////////////* 1): Sumar       ////////////////////");
         System.out.println("////////////* 2): Restar      ////////////////////");
@@ -41,36 +37,47 @@ public class Rodri6guia3 {
         System.out.println("////////////* 5): Salir       ////////////////////");
         System.out.println("//////////////////////////////////////////////////");
         System.out.println("Ingrese dos numero enteros");
+        Scanner read = new Scanner(System.in);
         numero1 = read.nextInt();
         numero2 = read.nextInt();
-       funcionmenu(numero1,numero2);
+        funcionmenu(numero1,numero2);
     }
 
+    /*  @SuppressWarnings("empty-statement")*/
+    @SuppressWarnings("empty-statement")
     private static void funcionmenu(int numero1, int numero2) {
         
-        int opmenu
-        String opcionsalir;
+        int opmenu;
+                
+       
         opmenu = 0; 
         Scanner readopcion = new Scanner(System.in);
         System.out.println("Ingrese una opcion para realizar una operacion");
-        opmenu5 = readopcion.nextInt();
-       
-        switch (opmenu ) {
+        opmenu = readopcion.nextInt();
+       String opcionsalir;
+       opcionsalir = "";
+    
+       do  switch (opmenu ) {
             case 1:
                  System.out.println(numero1 + numero2);
-                break;
+                continue;
             case 2:
                  System.out.println(numero1 - numero2);
-                break;
+               
+                continue;
             case 3:
                  System.out.println(numero1 * numero2);
-                break;
+                
+                continue;
             case 4:
                  System.out.println(numero1 / numero2);
-                break;    
+               
+                continue;
             case 5:
-                 System.out.println("Are you sure you want to exit? Y/N");
+                  System.out.println("Are you sure you want to exit? Y/N");
                   Scanner readmenu = new Scanner(System.in);
-        opcionsalir = readmenu.nextLine();
-                    if (opcionsalir.equalsIgnoreCase("Y")) 
-                    
+                  opcionsalir = readmenu.nextLine();
+                  if  (opcionsalir.equalsIgnoreCase("Y"))
+                break;
+                
+        }
