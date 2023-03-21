@@ -13,37 +13,24 @@ public class ejercicio1guia5 {
 
     /**
      * @param args the command line arguments
-     * 
-     * 
-     * Realizar un algoritmo que llene un vector con los 100 primeros números enteros
-     * y los muestre por pantalla en orden descendente.
+     *
+     *
+     * Realizar un algoritmo que llene un vector con los 100 primeros números
+     * enteros y los muestre por pantalla en orden descendente.
      */
     public static void main(String[] args) {
-        int [] vector;
-        vector = new int[100];
-                
-    //    for (int i = 0; i < 100; i++){
-    //        vector[i] = i;
-  //     System.out.println("[" + vector[i] + "]");
-      
-        
-    //}
-    
-        for (int i = 0; i < 100; i++) {
+        int[] vector;
+        vector = new int[101];
+
+        //    for (int i = 0; i < 100; i++){
+        //        vector[i] = i;
+        //     System.out.println("[" + vector[i] + "]");
+        //}
+        for (int i = 100; i > 0; i--) {
             vector[i] = i;
             System.out.println("[" + vector[i] + "]");
 
         }
-  
-   }
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    }
 }

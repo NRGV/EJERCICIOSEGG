@@ -49,9 +49,3 @@ public class ejercicio5guia5 {
         }
     }
 }
-        
-        
-        
-    
-    
-}
